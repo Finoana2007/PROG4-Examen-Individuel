@@ -1,6 +1,6 @@
 aws:
   s3:
-    bucket: "mon-bucket-de-test"   # n'importe quelle valeur pour le local
+    bucket: "mon-bucket-de-test"
   region: "eu-west-3"
 
 spring:
@@ -18,3 +18,15 @@ spring:
     console:
       enabled: true
       path: /h2-console
+
+      spring:
+        datasource:
+          url: jdbc:postgresql://neondb_owner:npq_1edJKOncer4Zqep-late-snow-asoul64x-pooler.c-4.eu-central-1.aws.neon.tech/neondb?sslmode=require
+          username: neondb_owner
+          password: npq_1edJKOncer4Zqep-late-snow-asoul64x-pooler.c-4.eu-central-1.aws.neon.tech
+          driver-class-name: org.postgresql.Driver
+        jpa:
+          hibernate:
+            ddl-auto: update
+          show-sql: true
+          database-platform: org.hibernate.dialect.PostgreSQLDialect
