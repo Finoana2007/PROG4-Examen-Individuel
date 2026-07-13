@@ -1,4 +1,7 @@
 package api.poja.app.repository;
 
-public class ImageRepository {
+import api.poja.app.repository.model.ImageEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ImageRepository extends JpaRepository<ImageEntity, String> {
 }
