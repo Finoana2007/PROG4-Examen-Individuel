@@ -15,7 +15,7 @@ public class ImageEntity {
     @Id private String id;
     private String fileName;
     private String email;
-    private String status; // PROCESSING, COMPLETED, FAILED
+    private String status;
     private String bwS3Key;
     private LocalDateTime createdAt;
 }
